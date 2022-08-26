@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+body {
+    background-color: #F2EAE2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-image: url('images/image-product-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 240px;
+    flex: 1 1 0;
+}
+
+.product-detail {
+    flex: 1 1 0;
+    padding: 25px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.tag {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+    color: #6C7289;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+    margin-bottom: 30px;
+}
+
+.old-price {
+    font-weight: 500;
+    line-height: 23px;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #6c7289;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.btn {
+    width: 100%;
+    background-color: #3D8168;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #1A4032;
+}
+
+.btn img {
+    margin-right: 12px;
+}
+
+
+@media only screen and (min-width: 720px) {
+    .card {
+        flex-direction: row;
+        max-width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .card-image {
+        background-image: url('images/image-product-desktop.jpg');
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+}
